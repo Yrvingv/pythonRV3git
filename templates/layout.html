@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itaka's fitnesswear</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="banner">Envío gratis a Barquisimeto por compras superiores a $100</div>
+
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.jpeg') }}" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="#">CLIENTES</a></li>
+                <li><a href="#">ENVIOS</a></li>
+                <li><a href="#">NUEVA COLECCION</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#">UBICACIÓN</a></li>
+                <li><a href="#">PROMOCIONES</a></li>
+                <li><a href="#">TEAM</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">HOME</a>
+            <a href="#">CLIENTES</a>
+            <a href="#">ENVIOS</a>
+            <a href="#">NUEVA COLECCION</a>
+            <a href="#">CONTACTO</a>
+            <a href="#">UBICACIÓN</a>
+            <a href="#">PROMOCIONES</a>
+            <a href="#">TEAM</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Políticas</a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/itakasfitnesswear" target="_blank"><img src="{{ url_for('static', filename='img/logoX.png') }}" alt="Twitter"></a>
+            <a href="https://www.instagram.com/itakasfitnesswear" target="_blank"><img src="{{ url_for('static', filename='img/logoINSTA.png') }}" alt="Instagram"></a>
+            <a href="https://www.instagram.com/itakasfitnesswear" target="_blank"><img src="{{ url_for('static', filename='img/logoFACE.png') }}" alt="Facebook"></a>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <a href="https://wa.me/584245858011" class="whatsapp-float" target="_blank">
+        <img src="{{ url_for('static', filename='img/logoWSP2.png') }}" alt="WhatsApp" />
+    </a>
+</body>
+</html>

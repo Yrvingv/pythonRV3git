@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="home">
+    <img src="{{ url_for('static', filename='img/principalIMG.png') }}" alt="Principal Image" class="principal-img">
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen1.jpg') }}" alt="Imagen 1" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen2.jpg') }}" alt="Imagen 2" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen3.jpeg') }}" alt="Imagen 3" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen4.jpeg') }}" alt="Imagen 4" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen5.jpeg') }}" alt="Imagen 5" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen6.jpeg') }}" alt="Imagen 6" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen7.jpeg') }}" alt="Imagen 7" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen8.jpeg') }}" alt="Imagen 8" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen9.jpeg') }}" alt="Imagen 9" class="carousel-img"></div>
+            <div class="carousel-slide"><img src="{{ url_for('static', filename='img/imagen10.jpeg') }}" alt="Imagen 10" class="carousel-img"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div class="additional-images">
+        <img src="{{ url_for('static', filename='img/ImagenEmoFeliz1.png') }}" alt="Imagen 11" class="additional-img">
+        <img src="{{ url_for('static', filename='img/ImagenEmoFeliz2.png') }}" alt="Imagen 12" class="additional-img">
+    </div>
+    <!-- Cuadrícula de imágenes con enlaces -->
+    <div class="image-grid">
+        <p class="grid-text">No tengas mas excusas, evita ser la mal vestida del gym</p>
+        <p class="grid-text large">COMPRA TUS FAVORITOS... !!!</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="{{ url_for('carrito') }}"><img src="{{ url_for('static', filename='img/imagen11.jpeg') }}" alt="Imagen 11" class="grid-img"></a>
+                <br>
+                <span class="model-name">Santita</span>
+            </div>
+            <div class="grid-item">
+                <a href="{{ url_for('carrito') }}"><img src="{{ url_for('static', filename='img/imagen12.jpeg') }}" alt="Imagen 12" class="grid-img"></a>
+                <br>
+                <span class="model-name">Laflaca</span>
+            </div>
+            <div class="grid-item">
+                <a href="{{ url_for('carrito') }}"><img src="{{ url_for('static', filename='img/imagen13.jpeg') }}" alt="Imagen 13" class="grid-img"></a>
+                <br>
+                <span class="model-name">La3x1</span>
+            </div>
+            <div class="grid-item">
+                <a href="{{ url_for('carrito') }}"><img src="{{ url_for('static', filename='img/imagen14.jpeg') }}" alt="Imagen 14" class="grid-img"></a>
+                <br>
+                <span class="model-name">Yoseb</span>
+            </div>
+    </div>
+</div>
+{% endblock %}

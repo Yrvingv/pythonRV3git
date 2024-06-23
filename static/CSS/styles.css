@@ -1,0 +1,281 @@
+/* Ajustes generales para todos los elementos */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #fff;
+}
+
+.banner {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 180px;
+    margin: 10px auto;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+}
+
+.principal-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Añade este margen para separar la imagen principal del carrusel */
+}
+
+/* Carrusel */
+.carousel {
+    width: 40%; /* Ajusta el ancho del carrusel */
+    height: 400px; /* Ajusta la altura del carrusel */
+    margin: 20px auto; /* Ajusta el margen superior para separar del contenido anterior */
+    overflow: hidden;
+    position: relative;
+    /*border: 1px solid #ccc; /* Opcional: añade un borde al carrusel */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes se ajusten correctamente dentro del carrusel */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Botones de navegación del carrusel */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Nuevas clases para las imágenes adicionales */
+.additional-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0; /* Añade margen superior e inferior para separar del carrusel y del footer */
+}
+
+.additional-img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px; /* Margen inferior para separar las dos imágenes */
+}
+/* Cuadrícula de imágenessssssssssssssssssssssssss */
+.image-grid {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.grid-text {
+    font-family: 'Cocogoose', sans-serif;
+    margin: 10px 0;
+}
+
+.grid-text.large {
+    font-size: 1.5em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Dos columnas con ancho automático */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+    justify-content: center; /* Centra horizontalmente las columnas */
+}
+
+.grid-img {
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+    margin: 0px; /* Ajusta el margen para controlar el espacio entre las imágenes */
+}
+
+.btn-regresar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-regresar:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    color: black; /* Cambia el color del texto a negro */
+}
+
+.grid-item {
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.model-name {
+    display: block;
+    font-family: verdana;
+    margin-top: 5px;
+    font-weight: none;
+    font-size: 14px;
+    color: #ffffff; /* Color del texto */
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-block; /* Para que los enlaces ocupen solo el espacio necesario */
+    margin-right: 120px; /* Espacio entre los íconos de redes sociales */
+}
+
+.social-links img {
+    width: 120px; /* Ajusta el ancho de las imágenes de los logos */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+
+.footer-links, .social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-links a, .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    font-weight: bold; /* Añade negrita al texto del footer */
+}
+.whatsapp-float {
+    position: fixed;
+    width: 70px;
+    height: auto;
+    bottom: 60px;
+    right: 70px;
+    z-index: 800;
+    cursor: pointer;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tablets y dispositivos de tamaño mediano */
+@media (max-width: 768px) {
+    .carousel {
+        width: 90%;
+        height: 250px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+
+/* Teléfonos móviles y dispositivos pequeños */
+@media (max-width: 480px) {
+    .carousel {
+        width: 100%;
+        height: 200px;
+    }
+    .logo img {
+        width: 120px;
+    }
+    .navbar a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    .prev, .next {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
