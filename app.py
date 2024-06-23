@@ -10,6 +10,5 @@ def home():
 def carrito():
     return render_template('carrito.html')
 
-
 if __name__ == '__main__':
     app.run()

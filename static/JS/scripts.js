@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.carousel-slide');
     let index = 0;
 
+    
     function showSlide(idx) {
         if (idx >= slides.length) {
             index = 0;
